@@ -1,4 +1,6 @@
-close all
+clc;
+clear all;
+close all;
 clearvars
 %x = input('Enter x: ')
 x = [1 2 1 -1]; 

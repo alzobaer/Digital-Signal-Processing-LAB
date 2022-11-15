@@ -41,14 +41,14 @@ title('X(m) imaginary');
 xlabel('Frequency(kHz)');
 ylabel('Amplitude');
 
-%Magnitude of DFT
+%Magnitude spectrum of DFT
 subplot(3,2,3);
 stem(n, abs(X));
 title('Magnitude');
 xlabel('Frequency(kHz)');
 ylabel('Amplitude');
 
-%Phase spectram of 
+%Phase spectram of DFT
 a = round(real(X), 3);
 b = round(imag(X), 3);
 s = atan(b/a);
@@ -58,7 +58,7 @@ title('Phase');
 xlabel('Frequency(kHz)');
 ylabel('Degree');
 
-%power spectram
+%power spectram of DFT
 y = abs(X).^2;
 subplot(3, 2, 5);
 stem(n, y), title('Power Spectrum');

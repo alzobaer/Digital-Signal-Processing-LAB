@@ -1,4 +1,5 @@
 clc;
+clear all;
 close all;
 %x[n]= input('Enter x: ');
 x = [1 2 3 4];
